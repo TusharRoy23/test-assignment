@@ -11,6 +11,7 @@ that our real application is built with:
 * [React](https://react.dev/)
 * [Apollo GraphQL client](https://www.apollographql.com/docs/react/)
 * [Ant Design UI library](https://ant.design/)
+* NGINX server added to serve static files of React
 
 ## Tasks
 
@@ -24,18 +25,12 @@ Please complete all of the following:
 ## Run the application
 
 ```sh
-# install dependencies
-npm i
-
-# start frontend server
-npm start
-
-# start postgres & hasura
+# start frontend server, postgres & hasura
 docker compose up
 ```
 
 
-Then open http://localhost:3000/ in your browser.
+Then open http://localhost:4000/ in your browser.
 
 Hasura serves a grapql endpoint with schema auto generated from Postgres schema. It is available at http://localhost:8080/v1/graphql. Frontend should interact with the database only through this endpoint.
 

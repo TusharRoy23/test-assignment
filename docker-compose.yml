@@ -1,5 +1,12 @@
 version: "3.6"
 services:
+  frontend-app:
+    build:
+      context: .
+      dockerfile: ./dockers/Dockerfile
+    image: frontend_app
+    ports:
+      - "4000:80"
   postgres:
     image: postgres:15
     restart: always

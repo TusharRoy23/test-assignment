@@ -8,6 +8,7 @@
 .yarn/unplugged
 .yarn/install-state.gz
 /db_data
+/build
 
 # testing
 /coverage
